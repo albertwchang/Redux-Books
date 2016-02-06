@@ -4,9 +4,9 @@ import { bindActionCreators } from 'redux';
 
 let BookDetails = React.createClass({
   render: function() {
-    return (
-      <div>Title: Title Test</div>
-    );
+    let { activeBook } = this.props;
+    let title = activeBook ? activeBook.title : "Nothing selected yet";
+    return ( <div>{title}</div> );
   }
 });
 
@@ -14,13 +14,11 @@ let BookDetails = React.createClass({
 //   return bindActionCreators({ selectBook: SelectBook }, dispatch);
 // }
 
-// function mapStateToProps(state) {
-//   // whatever is returned within this functipon is added to the shell's props
-//   // e.g. inside of BookList
-//   return { activeBook: state.activeBook };
-// }
+function mapStateToProps(state) {
+  // whatever is returned within this functipon is added to the shell's props
+  // e.g. inside of BookList
+  return { activeBook: state.activeBook };
+}
 
-// let bookDetailsProps = connect(mapStateToProps, mapDispatchToProps);
-// export default bookDetailsProps(BookDetails);
-
-export default BookDetails;
+let bookDetailProps = connect(mapStateToProps);
+export default bookDetailProps(BookDetails);

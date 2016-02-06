@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "sample books listing application utilizing, and practicing usage of Redux.",
   "scripts": {
-    "start": "webpack-dev-server -d"
+    "start": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
