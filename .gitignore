@@ -1,0 +1,13 @@
+# OSX
+#
+.DS_Store
+
+# Build files
+build/
+
+# node.js
+node_modules/
+npm-debug.log
+
+# env variables
+.env

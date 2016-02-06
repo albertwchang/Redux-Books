@@ -1,0 +1,47 @@
+{
+  "name": "books",
+  "version": "0.1.0",
+  "description": "sample books listing application utilizing, and practicing usage of Redux.",
+  "scripts": {
+    "start": "webpack-dev-server -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/achang28/Redux-Books.git"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "react.js",
+    "redux",
+    "stores",
+    "models",
+    "javascript",
+    "js"
+  ],
+  "author": "Albert W. Chang (achang28)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/achang28/Redux-Books/issues"
+  },
+  "homepage": "https://github.com/achang28/Redux-Books#readme",
+  "devDependencies": {
+    "babel-core": "^6.4.5",
+    "babel-loader": "~6.2.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "jshint": "~2.9.1",
+    "jshint-loader": "~0.8.3",
+    "node-libs-browser": "~1.0.0",
+    "strip-loader": "0.1.1",
+    "webpack": "~1.12.12",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "babel-preset-stage-1": "^6.3.13",
+    "react": "~0.14.7",
+    "react-dom": "~0.14.7",
+    "react-redux": "^4.3.0",
+    "redux": "^3.2.1"
+  }
+}
