@@ -5,8 +5,20 @@ import { bindActionCreators } from 'redux';
 let BookDetails = React.createClass({
   render: function() {
     let { activeBook } = this.props;
-    let title = activeBook ? activeBook.title : "Nothing selected yet";
-    return ( <div>{title}</div> );
+    let BookDetails;
+
+    if (activeBook) {
+      let { title, author, pages } = activeBook;
+      return (
+        <div>
+          <h4>Selected Book:</h4>
+          <div>Title: {title}</div>
+          <div>Author: {author}</div>
+          <div>Pages: {pages}</div>
+        </div>
+      );
+    } else
+      return (<div>"Nothing selected yet"</div>);
   }
 });
 
